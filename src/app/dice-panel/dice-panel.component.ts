@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-dice-panel',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dice-panel.component.css']
 })
 export class DicePanelComponent implements OnInit {
+  @Input() dices: number[] = [];
 
   constructor() { }
 

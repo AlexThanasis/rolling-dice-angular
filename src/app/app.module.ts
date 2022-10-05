@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ControlPanelComponent } from './control-panel/control-panel.component';
 import { DicePanelComponent } from './dice-panel/dice-panel.component';
-import { DiceComponent } from './dice/dice.component';
 import { DiceFirstFaceComponent } from './dices/dice-first-face/dice-first-face.component';
 import { DiceSecondFaceComponent } from './dices/dice-second-face/dice-second-face.component';
 import { DiceThirdFaceComponent } from './dices/dice-third-face/dice-third-face.component';
@@ -17,7 +16,6 @@ import { DiceSixthFaceComponent } from './dices/dice-sixth-face/dice-sixth-face.
     AppComponent,
     ControlPanelComponent,
     DicePanelComponent,
-    DiceComponent,
     DiceFirstFaceComponent,
     DiceSecondFaceComponent,
     DiceThirdFaceComponent,
