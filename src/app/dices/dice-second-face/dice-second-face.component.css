@@ -1,0 +1,9 @@
+
+  .second-face{
+    display: flex ;
+    justify-content: space-between;
+  }
+  
+  .second-face .dot:nth-of-type(2) {
+    align-self: flex-end;
+  }

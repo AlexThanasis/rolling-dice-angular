@@ -1,0 +1,14 @@
+  .fourth-face,
+  .sixth-face,
+  .fifth-face {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .fourth-face .column,
+  .sixth-face .column,
+  .fifth-face .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
