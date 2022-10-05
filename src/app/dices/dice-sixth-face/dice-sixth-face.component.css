@@ -1,24 +1,19 @@
-.first-face {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.dice {
-  padding: 4px;
-  background-color: tomato;
-  width: 104px;
-  height: 104px;
-  border-radius: 10%;
-  margin-right: 10px;
-}
-
 .dot {
   display: block;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: white;
+}
+
+.dice {
+  padding: 4px;
+  background-color: lightgray;
+  width: 104px;
+  height: 104px;
+  border-radius: 10%;
+  margin-right: 10px;
+  margin-bottom: 15px;
 }
 
 .second-face {

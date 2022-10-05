@@ -1,4 +1,4 @@
-.first-face {
+/* .first-face {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +62,7 @@
 
 .fifth-face .column:nth-of-type(2) {
   justify-content: center;
-}
+} */
 
 body {
   font-weight: 100;

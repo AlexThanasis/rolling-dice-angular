@@ -1,99 +1,42 @@
 <div class="container">
-  <div class="row">
-    <div class="col col-8">
-      
-      <h3>Number of dice</h3>
-      <input #numberOfDice type="number">
-      
-      
-    </div>
-  </div>
-  <div class="row">
-    <div class="col col-8">
-        <button (click)="onRoll(numberOfDice.value)">Roll</button>
-      </div>
-  </div>
     <div class="row">
-      
-      <div class="col col-3 dices"></div>
-      <div class="col col-5 dices">
-
-        <div *ngFor="let dice of dices">
-          <div [ngSwitch] = 'dice'>
-          
-            <div *ngSwitchCase = '1'>
-              <div class="dice first-face">
-            <span class="dot">
-            </span>
-          </div>
+        <div class="col col-8">
+            <h3>Number of dice</h3>
+            <input #numberOfDice type="number" min="1" max="25" />
         </div>
-        
-        <div *ngSwitchCase = '2'>
-          <div class="dice second-face">
-            <span class="dot">
-            </span>
-            <span class="dot">
-            </span>
-          </div>
-        </div>
-        <div *ngSwitchCase = '3'>
-          <div class="dice third-face">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
-        <div *ngSwitchCase = '4'>
-          <div class="fourth-face dice">
-            <div class="column">
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-            <div class="column">
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-          </div>
-        </div>
-        <div *ngSwitchCase = '5'>
-          <div class="fifth-face dice">
-    
-            <div class="column">
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-            
-            <div class="column">
-              <span class="dot"></span>
-            </div>
-            
-            <div class="column">
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-          
-          </div>
-        </div>
-        <div *ngSwitchCase = '6'><div class="sixth-face dice">
-          <div class="column">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-          <div class="column">
-            <span class="dot"></span>
-            <span class="dot"></span>
-                <span class="dot"></span>
-              </div>
-              
-            </div></div>
-            <div *ngSwitchDefault>Uh oh! Something is wrong!</div>
-            
-          </div>
     </div>
+    <div class="row">
+        <div class="col col-8">
+            <button (click)="onRoll(numberOfDice.value)">Roll</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-3 dices"></div>
+        <div class="col col-5 dices">
+            <div *ngFor="let dice of dices">
+                <div [ngSwitch]="dice">
+                    <div *ngSwitchCase="1">
+                      <app-dice-first-face></app-dice-first-face>
+                    </div>
 
-  </div>
-
-  
-  </div>
+                    <div *ngSwitchCase="2">
+                        <app-dice-second-face></app-dice-second-face>
+                    </div>
+                    <div *ngSwitchCase="3">
+                        <app-dice-third-face></app-dice-third-face>
+                    </div>
+                    <div *ngSwitchCase="4">
+                      <app-dice-fourth-face></app-dice-fourth-face>           
+                    </div>
+                    <div *ngSwitchCase="5">
+                      <app-dice-fifth-face></app-dice-fifth-face>           
+                    </div>
+                    <div *ngSwitchCase="6">
+                      <app-dice-sixth-face></app-dice-sixth-face>           
+                    </div>
+                    <div *ngSwitchDefault>Uh oh! Something is wrong!</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
